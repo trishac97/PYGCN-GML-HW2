@@ -11,8 +11,8 @@ def encode_onehot(labels):
                              dtype=np.int32)
     return labels_onehot
 
-
-def load_data(path="../data/cora/", dataset="cora"):
+#change path depending on the environment used to execute the program
+def load_data(path="/content/pygcn/data/cora/", dataset="cora"):
     """Load citation network dataset (cora only for now)"""
     print('Loading {} dataset...'.format(dataset))
 
