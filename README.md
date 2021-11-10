@@ -2,15 +2,10 @@ Graph Convolutional Networks in PyTorch
 ====
 
 PyTorch implementation of Graph Convolutional Networks (GCNs) for semi-supervised classification [1].
-Used pytorch version to perform analysis on changing the number of layers, adding symmetric normalization, using GPU to understand accuracy deviation of the model. Pygcn.ipynb contains notebook used.
+I used pytorch version to perform analysis to see effects of changing the number of layers, adding symmetric normalization, using GPU to understand accuracy deviation of the GCN. Pygcn.ipynb contains notebook used.
 
-For a high-level introduction to GCNs, see:
-
-Thomas Kipf, [Graph Convolutional Networks](http://tkipf.github.io/graph-convolutional-networks/) (2016)
 
 ![Graph Convolutional Networks](figure.png)
-
-Note: There are subtle differences between the TensorFlow implementation in https://github.com/tkipf/gcn and this PyTorch re-implementation. This re-implementation serves as a proof of concept and is not intended for reproduction of the results reported in [1].
 
 This implementation makes use of the Cora dataset from [2].
 
@@ -19,11 +14,12 @@ This implementation makes use of the Cora dataset from [2].
 ```python setup.py install```
 
 ## Requirements
-
+  
   * PyTorch 0.4 or 0.5
   * Python 2.7 or 3.6
 
 ## Usage
+
 
 ```python train.py```
 
@@ -35,7 +31,7 @@ This implementation makes use of the Cora dataset from [2].
 
 ## Cite
 
-Please cite our paper if you use this code in your own work:
+Please cite this paper if you use this code in your own work:
 
 ```
 @article{kipf2016semi,
